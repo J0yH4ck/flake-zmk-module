@@ -1,0 +1,313 @@
+layout: {zmk_keyboard: anywhy_flake}
+layers:
+  base:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - ENTER
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - {t: I, type: held}
+  - O
+  - P
+  - BSPC
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - {t: J, type: held}
+  - K
+  - {t: L, type: held}
+  - ;
+  - ''''
+  - '['
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - LGUI
+  - LALT
+  - LCTRL
+  - SPACE
+  - num
+  - fn
+  - LSHFT
+  - LGUI
+  - LALT
+  - LCTRL
+  num:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - BACKSPACE
+  - TAB
+  - ENTER
+  - DEL
+  - '`'
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - '['
+  - '='
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ']'
+  - ''''
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  fn:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F12
+  - F7
+  - F8
+  - F9
+  - '&soft_off'
+  - {t: BT, h: '2', s: '&bt_clr_2'}
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - BRI UP
+  - ''
+  - ''
+  - F10
+  - F4
+  - F5
+  - F6
+  - CAPS
+  - {t: BT, h: '1', s: '&bt_clr_1'}
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
+  - ''
+  - ''
+  - F11
+  - F1
+  - F2
+  - F3
+  - '&studio_unlock'
+  - {t: BT, h: '0', s: '&bt_clr_0'}
+  - PP
+  - PREV
+  - NEXT
+  - BRI DN
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  gaming:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - CAPS
+  - TAB
+  - Q
+  - {t: W, type: held}
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - ENTER
+  - LSHFT
+  - {t: A, type: held}
+  - S
+  - {t: D, type: held}
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - '['
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - T
+  - G
+  - B
+  - SPACE
+  - gaming_num
+  - fn
+  - LSHFT
+  - LGUI
+  - LALT
+  - LCTRL
+  gaming_num:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESC
+  - BSPC
+  - CAPS
+  - ENTER
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [42, 30]
+  k: {t: BT, h: '3', s: '&bt_clr_3'}
+  l: [fn]
+- p: [30, 18]
+  k: {t: BT, h: '4', s: '&bt_clr_4'}
+  l: [fn]
+- p: [26, 15, 28]
+  k: {t: gaming, h: sticky}
+  l: [fn]
+- p: [31, 20, 33]
+  k: {t: base, h: sticky}
+  l: [gaming_num]
+- p: [13, 25]
+  k: '`'
+  l: [gaming]
