@@ -40,7 +40,7 @@ layers:
   - LEFT GUI
   - {t: Z, h: NAVIGATE}
   - {t: X, h: NUMBER}
-  - {t: C, h: BASE}
+  - {t: C, h: Fn}
   - {t: V, h: SETTING}
   - B
   - N
@@ -217,7 +217,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
