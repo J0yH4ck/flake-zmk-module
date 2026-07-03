@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: anywhy_flake}
 layers:
-  base:
+  BASE:
   - ESC
   - '1'
   - '2'
@@ -53,13 +53,72 @@ layers:
   - LALT
   - LCTRL
   - SPACE
-  - num
-  - fn
+  - NUMBER
+  - NAVIGATE
   - LSHFT
   - LGUI
   - LALT
   - LCTRL
-  num:
+  gaming:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - CAPS
+  - TAB
+  - Q
+  - {t: W, type: held}
+  - E
+  - R
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - ENTER
+  - LSHFT
+  - {t: A, type: held}
+  - S
+  - {t: D, type: held}
+  - F
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - '['
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - T
+  - G
+  - B
+  - SPACE
+  - SETTING
+  - NAVIGATE
+  - LSHFT
+  - LGUI
+  - LALT
+  - LCTRL
+  NUMBER:
   - ''
   - ''
   - ''
@@ -118,7 +177,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  fn:
+  NAVIGATE:
   - ''
   - ''
   - ''
@@ -177,66 +236,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  gaming:
-  - ESC
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '-'
-  - CAPS
-  - TAB
-  - Q
-  - {t: W, type: held}
-  - E
-  - R
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BSPC
-  - ENTER
-  - LSHFT
-  - {t: A, type: held}
-  - S
-  - {t: D, type: held}
-  - F
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - '['
-  - LCTRL
-  - Z
-  - X
-  - C
-  - V
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ']'
-  - T
-  - G
-  - B
-  - SPACE
-  - gaming_num
-  - fn
-  - LSHFT
-  - LGUI
-  - LALT
-  - LCTRL
-  gaming_num:
+  SETTING:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -298,16 +298,16 @@ layers:
 combos:
 - p: [42, 30]
   k: {t: BT, h: '3', s: '&bt_clr_3'}
-  l: [fn]
+  l: [NAVIGATE]
 - p: [30, 18]
   k: {t: BT, h: '4', s: '&bt_clr_4'}
-  l: [fn]
+  l: [NAVIGATE]
 - p: [26, 15, 28]
   k: {t: gaming, h: sticky}
-  l: [fn]
+  l: [NAVIGATE]
 - p: [31, 20, 33]
-  k: {t: base, h: sticky}
-  l: [gaming_num]
+  k: {t: BASE, h: sticky}
+  l: [SETTING]
 - p: [13, 25]
   k: '`'
   l: [gaming]
