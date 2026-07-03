@@ -38,7 +38,7 @@ layers:
   - ;
   - ''''
   - LEFT GUI
-  - {t: Z, h: BASE}
+  - {t: Z, h: NAVIGATE}
   - {t: X, h: NUMBER}
   - {t: C, h: BASE}
   - {t: V, h: SETTING}
@@ -97,7 +97,7 @@ layers:
   - PAGE DOWN
   - END
   - {t: ▽, type: trans}
-  - ''
+  - {type: held}
   - {t: NUMBER, h: toggle}
   - {t: Fn, h: toggle}
   - {t: SETTING, h: toggle}
