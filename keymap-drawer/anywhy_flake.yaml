@@ -21,7 +21,7 @@ layers:
   - T
   - Y
   - U
-  - {t: I, type: held}
+  - I
   - O
   - P
   - BSPC
@@ -32,9 +32,9 @@ layers:
   - F
   - G
   - H
-  - {t: J, type: held}
+  - J
   - K
-  - {t: L, type: held}
+  - L
   - ;
   - ''''
   - LEFT GUI
@@ -49,16 +49,16 @@ layers:
   - .
   - /
   - RCTRL
-  - ''
-  - ''
-  - ''
+  - Sft+TAB
+  - TAB
+  - '&td_alt_navTog'
   - {t: SPACE, h: NUMBER}
   - LEFT SHIFT
   - ENTER
-  - ''
+  - '&td_space_caps_numMo'
   - BACKSPACE
-  - ''
-  - ''
+  - Gui+DOWN
+  - Gui+UP
   NAVIGATE:
   - ''
   - ''
@@ -77,8 +77,8 @@ layers:
   - ''
   - '&mmv MOVE_UP'
   - ''
-  - ''
-  - ''
+  - '&open_wechat'
+  - '&open_edge'
   - ''
   - UP
   - ''
@@ -89,8 +89,8 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  - ''
-  - ''
+  - '&open_steam'
+  - '&open_obsidian'
   - LEFT
   - DOWN
   - RIGHT
@@ -99,25 +99,25 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: NUMBER, h: toggle}
-  - {t: BASE, h: toggle}
+  - {t: Fn, h: toggle}
   - {t: SETTING, h: toggle}
   - '&mkp RCLK'
-  - ''
+  - '&open_clash'
   - ''
   - ''
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ALT
   - '&mkp LCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: NUMBER, h: toggle}
   - {t: ▽, type: trans}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   NUMBER:
   - ''
   - ''
@@ -167,16 +167,16 @@ layers:
   - '3'
   - .
   - {t: ENTER, h: RCTRL}
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&td_alt_navTog'
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
   - '0'
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Fn:
   - ''
   - ''
@@ -226,16 +226,16 @@ layers:
   - F3
   - ''
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&td_alt_navTog'
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
   - F10
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   SETTING:
   - ''
   - ''
@@ -254,7 +254,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&soft_off'
   - ''
   - ''
   - ''
@@ -278,32 +278,25 @@ layers:
   - ''
   - ''
   - {type: held}
-  - ''
+  - '&studio_unlock'
   - ''
   - ''
   - ''
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&td_alt_navTog'
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
   - {t: ▽, type: trans}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
-- p: [42, 30]
-  k: {t: BT, h: '3', s: '&bt_clr_3'}
-- p: [30, 18]
-  k: {t: BT, h: '4', s: '&bt_clr_4'}
-- p: [26, 15, 28]
-  k: {t: SETTING, h: sticky}
-- p: [31, 20, 33]
-  k: {t: BASE, h: sticky}
-- p: [13, 25]
-  k: '`'
-  l: [SETTING]
+- p: [31, 32]
+  k: '-'
+- p: [31, 32, 33]
+  k: Sft+-
