@@ -7,114 +7,102 @@
     combos {
         compatible = "zmk,combos";
 
-        bt_sel_3 {
-            bindings = <&bt3>;
-            key-positions = <42 30>;
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <31 32>;
         };
 
-        bt_sel_4 {
-            bindings = <&bt4>;
-            key-positions = <30 18>;
-        };
-
-        enter_gaming {
-            bindings = <&sl 4>;
-            key-positions = <26 15 28>;
-        };
-
-        leave_gaming {
-            bindings = <&sl 0>;
-            key-positions = <31 20 33>;
-        };
-
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <13 25>;
-            layers = <4>;
+        dash {
+            bindings = <&kp RS(MINUS)>;
+            key-positions = <31 32 33>;
         };
     };
 
     macros {
-        bt_clr_0: bt_clr_0 {
+        open_edge: open_edge {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &bt BT_CLR>;
-            label = "BT_CLR_0";
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_GUI>,
+                <&macro_wait_time 10>,
+                <&kp E &kp D &kp G &kp E>,
+                <&macro_wait_time 10>,
+                <&kp ENTER>;
+
+            label = "OPEN_EDGE";
         };
 
-        bt_clr_1: bt_clr_1 {
+        open_obsidian: open_obsidian {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &bt BT_CLR>;
-            label = "BT_CLR_1";
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_GUI>,
+                <&macro_wait_time 10>,
+                <&kp O &kp B &kp S &kp I &kp D &kp I &kp A &kp N>,
+                <&macro_wait_time 10>,
+                <&kp ENTER>;
+
+            label = "OPEN_OBSIDIAN";
         };
 
-        bt_clr_2: bt_clr_2 {
+        open_clash: open_clash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &bt BT_CLR>;
-            label = "BT_CLR_2";
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_GUI>,
+                <&macro_wait_time 10>,
+                <&kp C &kp L &kp A &kp S &kp H>,
+                <&macro_wait_time 10>,
+                <&kp ENTER>;
+
+            label = "OPEN_CLASH";
         };
 
-        bt_clr_3: bt_clr_3 {
+        open_wechat: open_wechat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3 &bt BT_CLR>;
-            label = "BT_CLR_3";
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_GUI>,
+                <&macro_wait_time 10>,
+                <&kp W &kp E &kp C &kp H &kp A &kp T>,
+                <&macro_wait_time 10>,
+                <&kp ENTER>;
+
+            label = "OPEN_WECHAT";
         };
 
-        bt_clr_4: bt_clr_4 {
+        open_steam: open_steam {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4 &bt BT_CLR>;
-            label = "BT_CLR_4";
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_GUI>,
+                <&macro_wait_time 10>,
+                <&kp S &kp T &kp E &kp A &kp M>,
+                <&macro_wait_time 10>,
+                <&kp ENTER>;
+
+            label = "OPEN_STEAM";
         };
     };
 
     behaviors {
-        bt0: bt0 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BT0";
-            bindings = <&bt BT_SEL 0>, <&bt_clr_0>;
-
+        td_alt_navTog: td_alt_navTog {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ALT_NAVTOG";
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&mt LEFT_ALT LEFT_ALT>, <&to 1>;
         };
 
-        bt1: bt1 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BT1";
-            bindings = <&bt BT_SEL 1>, <&bt_clr_1>;
-
+        td_space_caps_numMo: td_space_caps_numMo {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SPACE_CAPS_NUMMO";
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        bt2: bt2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BT2";
-            bindings = <&bt BT_SEL 2>, <&bt_clr_2>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        bt3: bt3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BT3";
-            bindings = <&bt BT_SEL 3>, <&bt_clr_3>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        bt4: bt4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BT4";
-            bindings = <&bt BT_SEL 4>, <&bt_clr_4>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&lt 2 SPACE>, <&kp CAPS>;
         };
     };
 
@@ -123,51 +111,51 @@
 
         BASE {
             bindings = <
-&none          &none    &none    &none    &none        &none             &none      &none  &none          &none    &none     &none
-&kp TAB        &kp Q    &kp W    &kp E    &kp R        &kp T             &kp Y      &kp U  &kp I          &kp O    &kp P     &kp BSPC
-&mt LCTRL ESC  &kp A    &kp S    &kp D    &kp F        &kp G             &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp APOS
-&kp LEFT_GUI   &lt 0 Z  &lt 2 X  &lt 0 C  &lt 4 V      &kp B             &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RCTRL
-               &none    &none    &none    &lt 2 SPACE  &kp LEFT_SHIFT    &kp ENTER  &none  &kp BACKSPACE  &none    &none
+&none          &none        &none    &none           &none        &none             &none      &none                 &none          &none         &none       &none
+&kp TAB        &kp Q        &kp W    &kp E           &kp R        &kp T             &kp Y      &kp U                 &kp I          &kp O         &kp P       &kp BSPC
+&mt LCTRL ESC  &kp A        &kp S    &kp D           &kp F        &kp G             &kp H      &kp J                 &kp K          &kp L         &kp SEMI    &kp APOS
+&kp LEFT_GUI   &lt 0 Z      &lt 2 X  &lt 0 C         &lt 4 V      &kp B             &kp N      &kp M                 &kp COMMA      &kp DOT       &kp FSLH    &kp RCTRL
+               &kp RS(TAB)  &kp TAB  &td_alt_navTog  &lt 2 SPACE  &kp LEFT_SHIFT    &kp ENTER  &td_space_caps_numMo  &kp BACKSPACE  &kp LG(DOWN)  &kp LG(UP)
             >;
         };
 
         NAVIGATE {
             bindings = <
-&none   &none           &none           &none           &none            &none        &none   &none     &none     &none      &none          &none
-&none   &msc SCRL_UP    &none           &mmv MOVE_UP    &none            &none        &none   &none     &kp UP    &none      &kp PAGE_UP    &kp HOME
-&to 0   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none        &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &kp END
-&trans  &none           &tog 2          &tog 0          &tog 4           &mkp RCLK    &none   &none     &none     &none      &none          &trans
-        &none           &none           &none           &mkp LCLK        &trans       &trans  &tog 2    &trans    &none      &none
+&none   &none           &none           &none           &none            &none           &none           &none     &none     &none      &none          &none
+&none   &msc SCRL_UP    &none           &mmv MOVE_UP    &none            &open_wechat    &open_edge      &none     &kp UP    &none      &kp PAGE_UP    &kp HOME
+&to 0   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &open_steam     &open_obsidian  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &none           &tog 2          &tog 3          &tog 4           &mkp RCLK       &open_clash     &none     &none     &none      &none          &trans
+        &trans          &trans          &kp LEFT_ALT    &mkp LCLK        &trans          &trans          &tog 2    &trans    &trans     &trans
             >;
         };
 
         NUMBER {
             bindings = <
-&none      &none      &none      &none      &none      &none             &none      &none      &none   &none   &none      &none
-&kp GRAVE  &kp DEL    &none      &kp LPAR   &kp RPAR   &kp BSLH          &kp SLASH  &kp N7     &kp N8  &kp N9  &kp MINUS  &kp BACKSPACE
-&to 0      &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp LEFT_SHIFT    &kp STAR   &kp N4     &kp N5  &kp N6  &kp PLUS   &kp EQUAL
-&trans     &kp RC(Z)  &kp RC(X)  &kp RC(C)  &kp RC(V)  &kp RC(Y)         &kp COMMA  &kp N1     &kp N2  &kp N3  &kp DOT    &mt RCTRL ENTER
-           &none      &none      &none      &kp SPACE  &trans            &trans     &kp SPACE  &kp N0  &none   &none
+&none      &none      &none      &none           &none      &none             &none      &none      &none   &none   &none      &none
+&kp GRAVE  &kp DEL    &none      &kp LPAR        &kp RPAR   &kp BSLH          &kp SLASH  &kp N7     &kp N8  &kp N9  &kp MINUS  &kp BACKSPACE
+&to 0      &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT   &kp LEFT_SHIFT    &kp STAR   &kp N4     &kp N5  &kp N6  &kp PLUS   &kp EQUAL
+&trans     &kp RC(Z)  &kp RC(X)  &kp RC(C)       &kp RC(V)  &kp RC(Y)         &kp COMMA  &kp N1     &kp N2  &kp N3  &kp DOT    &mt RCTRL ENTER
+           &trans     &trans     &td_alt_navTog  &kp SPACE  &trans            &trans     &kp SPACE  &kp N0  &trans  &trans
             >;
         };
 
         Fn {
             bindings = <
-&none   &none    &none    &none    &none      &none     &none   &none      &none    &none   &none  &none
-&none   &kp F11  &kp F12  &kp F13  &none      &none     &none   &kp F7     &kp F8   &kp F9  &none  &none
-&to 0   &none    &none    &none    &none      &none     &none   &kp F4     &kp F5   &kp F6  &none  &none
-&trans  &none    &none    &none    &none      &none     &none   &kp F1     &kp F2   &kp F3  &none  &trans
-        &none    &none    &none    &kp SPACE  &trans    &trans  &kp SPACE  &kp F10  &none   &none
+&none   &none    &none    &none           &none      &none     &none   &none      &none    &none   &none   &none
+&none   &kp F11  &kp F12  &kp F13         &none      &none     &none   &kp F7     &kp F8   &kp F9  &none   &none
+&to 0   &none    &none    &none           &none      &none     &none   &kp F4     &kp F5   &kp F6  &none   &none
+&trans  &none    &none    &none           &none      &none     &none   &kp F1     &kp F2   &kp F3  &none   &trans
+        &trans   &trans   &td_alt_navTog  &kp SPACE  &trans    &trans  &kp SPACE  &kp F10  &trans  &trans
             >;
         };
 
         SETTING {
             bindings = <
-&none       &none         &none         &none         &none         &none           &none     &none      &none   &none      &none  &none
-&bt BT_CLR  &none         &none         &none         &none         &none           &none     &none      &none   &none      &none  &kp BACKSPACE
-&to 0       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &none  &none
-&trans      &none         &none         &none         &none         &none           &none     &none      &none   &none      &none  &trans
-            &none         &none         &none         &kp SPACE     &trans          &trans    &kp SPACE  &trans  &none      &none
+&none       &none         &none         &none           &none         &none             &none     &none      &none   &none      &none   &none
+&bt BT_CLR  &none         &none         &none           &none         &soft_off         &none     &none      &none   &none      &none   &kp BACKSPACE
+&to 0       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4      &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &none   &none
+&trans      &none         &none         &none           &none         &studio_unlock    &none     &none      &none   &none      &none   &trans
+            &trans        &trans        &td_alt_navTog  &kp SPACE     &trans            &trans    &kp SPACE  &trans  &trans     &trans
             >;
         };
     };
