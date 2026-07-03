@@ -6,7 +6,7 @@ You can tap the "Actions" tab, and download the newest firmware. Unzip it.
 
 Connecting to your keyboard. Click two times of the reset button on the back of the keyboard. 
 
-The .uf2 file with lable "left" is for the left hand keyboard, and the lable "right" is for the right hand keyboard. Just drag the file to the document. Once the document dispear, the firmware is done.
+The .uf2 file with lable "left" is for the left hand keyboard, and the lable "right" is for the right hand keyboard. Just drag the file to the document. Once the document disapear, the firmware is done.
 
 <img alt="keymap" width="100%" src="./keymap.svg">
 
