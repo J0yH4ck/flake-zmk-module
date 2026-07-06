@@ -38,7 +38,7 @@ layers:
   - ;
   - ''''
   - LEFT GUI
-  - {t: Z, h: NAVIGATE}
+  - Z
   - {t: X, h: NUMBER}
   - {t: C, h: Fn}
   - {t: V, h: SETTING}
@@ -54,7 +54,7 @@ layers:
   - '&td_alt_navTog'
   - {t: SPACE, h: NUMBER}
   - LEFT SHIFT
-  - ENTER
+  - {t: ENTER, h: NAVIGATE}
   - '&td_space_caps_numMo'
   - BACKSPACE
   - Gui+DOWN
@@ -72,7 +72,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - DELETE
   - '&msc SCRL_UP'
   - ''
   - '&mmv MOVE_UP'
@@ -97,7 +97,7 @@ layers:
   - PAGE DOWN
   - END
   - {t: ▽, type: trans}
-  - {type: held}
+  - ''
   - {t: NUMBER, h: toggle}
   - {t: Fn, h: toggle}
   - {t: SETTING, h: toggle}
@@ -113,7 +113,7 @@ layers:
   - LEFT ALT
   - '&mkp LCLK'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: NUMBER, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -254,7 +254,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&soft_off'
+  - ''
   - ''
   - ''
   - ''
@@ -300,3 +300,9 @@ combos:
   k: '-'
 - p: [31, 32, 33]
   k: Sft+-
+- p: [28, 27]
+  k: (
+- p: [28, 27, 26]
+  k: )
+- p: [13, 26, 37]
+  k: '&soft_off'
